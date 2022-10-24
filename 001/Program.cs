@@ -63,7 +63,7 @@ int MidArray(int[] array)
    int mid = 0;
    int result;
     for(int i = 0; i < array.Length; i++)
-        mid = mid + array[i];
+        mid = SumArray(array);
     result = mid / array.Length;
     return result;
 }
