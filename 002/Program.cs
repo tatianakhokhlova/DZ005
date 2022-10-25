@@ -4,8 +4,7 @@
     int num_n = 1;
     for(int i=0; i<n; i++) 
         num_n*=num;
-    Console.WriteLine($"{num} ^ {n} = {num_n}"); 
-    return 0;
+    return num_n;
     }
 
 // Функцию, которая вычисляет факториал числа n
@@ -35,20 +34,15 @@
     {
         if(c%2==0)
         return true;
-        else
+    else
         return false;
     }
 
 // Функцию, определяющую является ли число простым, то есть возвращающую true, если число простое, иначе - false
 bool IsPrime(int d)
 {
-    if(d>1)
-    {
-        for(int i = 2; i<d; i++)
-            if(d%i==0)
-               return false;
+    if (d % 1 == 0 && d % d == 0 && d % (d / 2) == 1)
         return true;
-    }
     else
         return false;
 }
