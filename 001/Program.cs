@@ -58,15 +58,8 @@ return mult;
     }
 
 // Среднее арифметическое элеметов массива
-int MidArray(int[] array)
-{
-   int mid = 0;
-   int result;
-    for(int i = 0; i < array.Length; i++)
-        mid = SumArray(array);
-    result = mid / array.Length;
-    return result;
-}
+
+int MidArray(int[] array)=>SumArray(array) / array.Length;
 
 // Подсчёт количества отрицательных элементов массива
 
